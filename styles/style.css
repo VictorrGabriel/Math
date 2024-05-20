@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  --color-primary: #3b8dd9;
+  --color-background: #f5f5f5;
+}
+
+body, html {
+  background-color: var(--color-background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: none !important;
+  overflow-y: hidden !important;
+}
+
+header {
+  background-color: #fff;
+  height: 55px;
+  width: 200px;
+  color: var(--color-primary);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.313);
+  
+
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 10px;
+
+  position: relative;
+}
+
+span.material-symbols-outlined{
+  font-size: 16px;
+  display: inline;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 1.6em;
+  display: inline;
+}
+
+header button {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  border: 1px solid black;
+
+}
+
+#conteiner-button-header {
+  background-color: var(--color-primary);
+  height: 55px;
+  padding-right: 10px;
+
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+#conteiner-button-header::before {
+  content: "";
+  background-image: linear-gradient(
+    to right bottom,
+    #fff 50%,
+    var(--color-primary) 50%
+  );
+  width: 50px;
+  height: 55px;
+}
+
+
+div#menu {
+    border: 1px solid black;
+    padding: 10px;
+
+    position: absolute;
+
+    background-color: var(--color-background);
+    display: none;
+    
+    
+}
+
+div#menu  ul {
+    list-style: none;
+}
+
+div#menu  ul > li{
+    margin-bottom: 10px;
+}
+
+div#menu a{
+    
+    text-decoration: none;
+    color: var(--color-primary);
+    
+}
+
+main {
+ max-width: 200px; 
+ text-align: justify;
+ margin: auto;
+}
+
+nav{
+  background-color: var(--color-background);
+  margin: 5px 0;
+  padding: 0 2px;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav a{
+  font: 0.9em sans-serif;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+
+
+section#conteiner{
+  background-color: #fff;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+}
+
+main h1{
+  text-align: center;
+  font: bold 1.1em sans-serif;
+  margin-bottom: 10px;
+}
+
+main p{
+  text-indent: 20px;
+}
+
+img.images{
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+  margin: 10px 0;
+  max-width: 90px;
+}
+
