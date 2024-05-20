@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
 :root {
@@ -11,7 +10,8 @@
   --color-background: #f5f5f5;
 }
 
-body, html {
+body,
+html {
   background-color: var(--color-background);
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: none !important;
@@ -22,9 +22,8 @@ header {
   height: 55px;
   color: var(--color-primary);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.313);
-  
 
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
@@ -33,7 +32,7 @@ header {
   position: relative;
 }
 
-span.material-symbols-outlined{
+span.material-symbols-outlined {
   font-size: 16px;
   display: inline;
 }
@@ -52,7 +51,6 @@ header button {
   cursor: pointer;
 
   border: 1px solid black;
-
 }
 
 #conteiner-button-header {
@@ -76,59 +74,52 @@ header button {
   height: 55px;
 }
 
-
 div#menu {
-    border: 1px solid black;
-    padding: 10px;
+  border: 1px solid black;
+  padding: 10px;
 
-    position: absolute;
+  position: absolute;
 
-    background-color: var(--color-background);
-    display: none;
-    
-    
+  background-color: var(--color-background);
+  display: none;
 }
 
-div#menu  ul {
-    list-style: none;
+div#menu ul {
+  list-style: none;
 }
 
-div#menu  ul > li{
-    margin-bottom: 10px;
+div#menu ul > li {
+  margin-bottom: 10px;
 }
 
-div#menu a{
-    
-    text-decoration: none;
-    color: var(--color-primary);
-    
+div#menu a {
+  text-decoration: none;
+  color: var(--color-primary);
 }
 
 main {
- max-width: 320px; 
- text-align: justify;
- margin: auto;
+  max-width: 320px;
+  text-align: justify;
+  margin: auto;
 }
 
-nav{
+nav {
   background-color: var(--color-background);
   margin: 5px 0;
   padding: 0 2px;
 }
 
 nav > ul {
-    list-style: none;
+  list-style: none;
 }
 
-nav a{
+nav a {
   font: 0.9em sans-serif;
   text-decoration: none;
   color: var(--color-primary);
 }
 
-
-
-section#conteiner{
+section#conteiner {
   background-color: #fff;
   margin: 0 5px;
   padding: 10px;
@@ -136,19 +127,18 @@ section#conteiner{
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 
-main h1{
+main h1 {
   text-align: center;
   font: bold 1.1em sans-serif;
   margin-bottom: 10px;
 }
 
-main p{
+main p {
   text-indent: 20px;
 }
 
-img.images{
+img.images {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
   margin: 10px 0;
   max-width: 290px;
 }
-
