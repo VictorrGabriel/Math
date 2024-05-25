@@ -34,7 +34,7 @@ function showMenu() {
 } else {
   menu_button_element.addEventListener("click", ()=> {
     if(menu_element.style.display === "block") {
-      menu_element.style.display = "block"
+      menu_element.style.display = "none"
     }else{
       menu_element.style.display = "block"
     }
