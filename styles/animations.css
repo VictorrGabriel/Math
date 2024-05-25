@@ -1,0 +1,28 @@
+@keyframes slideMenuIn {
+    0%{
+        transform: translate(-100%);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes slideMenuBack {
+    0%{
+        transform: translate(-100%);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+
+.slideMenuIn{
+    animation: slideMenuIn .5s ease-in 0s 1;
+}
+
+.slideMenuBack{
+    animation: slideMenuBack .5s ease-in 0s 1 reverse both;
+    transform: translate(-100%);
+}
