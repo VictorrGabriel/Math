@@ -82,10 +82,9 @@ header button {
 
   
   background-color: var(--color-background);
-  display: none;
+ /*  display: none; */
  
-  position: absolute;
-  top: 58px;
+  
 }
 
 #menu ul {

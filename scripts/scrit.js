@@ -1,5 +1,7 @@
 const menu_button_element = document.getElementById("menu_button");
 const menu_element = document.getElementById("menu");
+
+if(window.innerWidth < 401){
 menu_button_element.addEventListener("click", () => {
     if(!menuVisible){
         showMenu()
@@ -28,4 +30,13 @@ function showMenu() {
   menuVisible = true;
 
   return menuVisible;
+}
+} else {
+  menu_button_element.addEventListener("click", ()=> {
+    if(menu_element.style.display === "block") {
+      menu_element.style.display = "block"
+    }else{
+      menu_element.style.display = "block"
+    }
+  })
 }
