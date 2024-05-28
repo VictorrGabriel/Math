@@ -3,7 +3,7 @@
 @media screen and (max-width: 320px) {
   #menu {
     position: absolute;
-    top: 58px;
+    top: 260px;
   }
 
   img.images {
@@ -12,9 +12,6 @@
 }
 
 @media screen and (min-width: 321px) and (max-width: 500px) {
-  main {
-    max-width: 450px;
-  }
 
   #menu {
     position: absolute;
@@ -30,9 +27,9 @@
 @media screen and (min-width: 501px) and (max-width: 1980px) {
   body {
     display: grid;
-    grid-template-areas:"header header header" "menu main main";
+    grid-template-areas: "header header header" "menu main main";
   }
-  header{
+  header {
     grid-area: header;
   }
   #menu {
@@ -42,12 +39,14 @@
     padding: 10px;
 
     background-color: #fff;
-    /* display: none; */
+    display: none;
     width: 150px;
   }
-  main {
-    grid-area: main;
-    max-width: 500px;
+  .shrink {
+    max-width: calc(100% - 150px);
+  }
+  .expanded {
+    max-width: 100%;
   }
 
   img.images {

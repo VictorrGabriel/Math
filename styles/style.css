@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +9,88 @@
 
 :root {
   --color-primary: #3b8dd9;
+  --color-secundary: #d93bbc;
+  --color-tertiary: #5ce1e6;
   --color-background: #f5f5f5;
 }
 
 body,
 html {
   background-color: var(--color-background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   overflow-x: none !important;
 }
 
 header {
+  background-color: var(--color-tertiary);
+  display: flex;
+  justify-content: space-between;
+
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.313);
+  height: 300px;
+}
+
+div#header-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.21);
+  padding-left: 5px;
+}
+
+
+div#header-text-area > div.conteiner-button-header{
+  height: 35px;
+  margin-right: 5px;
+
+  position: absolute;
+  top: 20px;
+}
+
+div#header-text-area  button {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 2px 5px;
+  cursor: pointer;
+
+  border: 1px solid black;
+}
+
+div#header-text-area > div.conteiner-button-header::before {
+  content: "";
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-tertiary) 50%,
+    var(--color-primary) 50%
+  );
+  width: 25px;
+  height: 35px;
+}
+
+div#header-text-area > .images_conteiner{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+div#header-text-area > h1{
+  text-align: center;
+  color: var(--color-primary);
+}
+
+div#image-header {
+  background-image: url(../medias/images/back-header-mobile.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 50%;
+}
+
+
+div#conteiner-header {
   background-color: #fff;
   height: 55px;
   color: var(--color-primary);
@@ -29,7 +102,13 @@ header {
   flex-wrap: wrap;
   padding-left: 10px;
 
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  opacity: 0;
 }
 
 span.material-symbols-outlined {
@@ -38,13 +117,16 @@ span.material-symbols-outlined {
   cursor: pointer;
 }
 
-header h1 {
+div#conteiner-header h1 {
   text-align: center;
   font-size: 1.6em;
   display: inline;
+
+  color: var(--color-primary);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.135);
 }
 
-header button {
+div#conteiner-header button {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-weight: bold;
@@ -54,7 +136,7 @@ header button {
   border: 1px solid black;
 }
 
-#conteiner-button-header {
+div.conteiner-button-header {
   background-color: var(--color-primary);
   height: 55px;
   padding-right: 10px;
@@ -64,7 +146,7 @@ header button {
   align-self: flex-end;
 }
 
-#conteiner-button-header::before {
+div.conteiner-button-header::before {
   content: "";
   background-image: linear-gradient(
     to right bottom,
@@ -75,16 +157,21 @@ header button {
   height: 55px;
 }
 
+img#logo-image {
+  width: 128px;
+
+  border-radius: 100%;
+
+  margin-bottom: 10px;
+}
+
 #menu {
   border: 1px solid black;
-  border-radius: 0  3px 3px 0;
+  border-radius: 0 3px 3px 0;
   padding: 10px;
 
-  
   background-color: var(--color-background);
- /*  display: none; */
- 
-  
+  display: none;
 }
 
 #menu ul {
@@ -93,6 +180,12 @@ header button {
 
 #menu ul > li {
   margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+#menu ul > li:hover {
+  border: 1px solid black;
 }
 
 #menu a {
@@ -101,9 +194,23 @@ header button {
 }
 
 main {
-  max-width: 320px;
   text-align: justify;
   margin: auto;
+}
+
+main h1 {
+  text-align: center;
+  font: bold 1.1em sans-serif;
+  margin-bottom: 10px;
+
+  color: var(--color-primary);
+  margin-top: 10px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.135);
+}
+p.substitute {
+  font-size: 0.7em;
+  text-align: center;
+  font-style: italic;
 }
 
 nav {
@@ -130,18 +237,15 @@ section#conteiner {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 
-main h1 {
-  text-align: center;
-  font: bold 1.1em sans-serif;
-  margin-bottom: 10px;
-}
-
 main p {
   text-indent: 20px;
+  font-size: 0.8em;
+  display: inline-block;
 }
 
 img.images {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
   margin: 10px 0;
   max-width: 290px;
+  display: inline-block;
 }
