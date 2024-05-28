@@ -3,7 +3,8 @@
 @media screen and (max-width: 320px) {
   #menu {
     position: absolute;
-    top: 260px;
+    top: 310px;
+    height: 100vh;
   }
 
   img.images {
@@ -15,7 +16,8 @@
 
   #menu {
     position: absolute;
-    top: 58px;
+    top: 310px;
+    height: 100vh;
   }
 
   .images_conteiner {
@@ -42,11 +44,17 @@
     display: none;
     width: 150px;
   }
+  main{
+    transition: position ease 1s;
+  }
   .shrink {
     max-width: calc(100% - 150px);
   }
   .expanded {
-    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 300px;
+    
   }
 
   img.images {

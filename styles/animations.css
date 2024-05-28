@@ -18,6 +18,12 @@
     }
 }
 
+@keyframes hideMenu {
+    0%{
+        
+    }
+}
+
 .slideMenuIn{
     animation: slideMenuIn .5s ease-in 0s 1;
 }
