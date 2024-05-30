@@ -34,13 +34,12 @@ div#header-text-area {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.21);
   padding-left: 5px;
 }
 
-
-div#header-text-area > div.conteiner-button-header{
+div#header-text-area > div.conteiner-button-header {
   height: 35px;
   margin-right: 5px;
 
@@ -48,7 +47,7 @@ div#header-text-area > div.conteiner-button-header{
   top: 20px;
 }
 
-div#header-text-area  button {
+div#header-text-area button {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-weight: bold;
@@ -69,13 +68,13 @@ div#header-text-area > div.conteiner-button-header::before {
   height: 35px;
 }
 
-div#header-text-area > .images_conteiner{
+div#header-text-area > .images_conteiner {
   position: absolute;
   top: 15px;
   left: 15px;
 }
 
-div#header-text-area > h1{
+div#header-text-area > h1 {
   text-align: center;
   color: var(--color-primary);
 }
@@ -88,7 +87,6 @@ div#image-header {
 
   width: 50%;
 }
-
 
 div#conteiner-header {
   background-color: #fff;
@@ -114,7 +112,6 @@ div#conteiner-header {
 
 span.material-symbols-outlined {
   font-size: 16px;
-  display: inline;
   cursor: pointer;
 }
 
@@ -146,7 +143,6 @@ div.conteiner-button-header {
   align-items: center;
   align-self: flex-end;
 }
-
 div.conteiner-button-header::before {
   content: "";
   background-image: linear-gradient(
@@ -166,12 +162,16 @@ img#logo-image {
   margin-bottom: 10px;
 }
 
-menu {
+menu{
   border: 1px solid black;
   border-radius: 0 3px 3px 0;
   padding: 10px;
 
   background-color: var(--color-background);
+  display: none;
+}
+
+#close_menu{
   display: none;
 }
 
@@ -211,7 +211,7 @@ main h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.135);
 }
 
-main p{
+main p {
   text-align: justify;
   text-indent: 20px;
   padding: 0 10px;
@@ -238,15 +238,15 @@ nav a {
   color: var(--color-primary);
 }
 
-#content{
+#content {
   padding-bottom: 10px;
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
-section#posts_conteiner{
+section#posts_conteiner {
   background-image: url(../medias/images/back_Your_Math_tetiary.png);
   background-attachment: fixed;
   display: flex;
@@ -254,25 +254,22 @@ section#posts_conteiner{
   justify-content: space-around;
   align-items: center;
   height: 800px;
-
-  
 }
 
-div.images_box{
+div.images_box {
   display: flex;
   justify-content: center;
 }
 
-article.posts{
+article.posts {
   background-color: var(--color-secundary);
   border-radius: 5px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
   height: 220px;
   width: 220px;
-
 }
 
-footer{
+footer {
   background-color: var(--color-primary);
   color: white;
   text-align: center;
