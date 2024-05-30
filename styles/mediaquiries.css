@@ -22,9 +22,18 @@
 @media screen and (min-width: 321px) and (max-width: 500px) {
 
   menu {
-    position: absolute;
-    top: 310px;
+    position: fixed;
+    top: 5px;
     height: 100vh;
+    margin-top: 5px;
+    margin-right: 15px;
+    width: 90%;
+    z-index: 1;
+  }
+
+  #close_menu{
+    display: block;
+    
   }
 
   .images_conteiner {
@@ -46,12 +55,14 @@
     border: 1px solid black;
     border-radius: 0 3px 3px 0;
     padding: 10px;
+    margin-right: 5px;
 
     background-color: #fff;
     display: none;
     width: 150px;
   }
   main{
+    margin-top: 5px;
     transition: position ease 1s;
   }
   .shrink {
