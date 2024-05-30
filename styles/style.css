@@ -166,7 +166,7 @@ img#logo-image {
   margin-bottom: 10px;
 }
 
-#menu {
+menu {
   border: 1px solid black;
   border-radius: 0 3px 3px 0;
   padding: 10px;
@@ -175,28 +175,30 @@ img#logo-image {
   display: none;
 }
 
-#menu ul {
+menu ul {
   list-style: none;
 }
 
-#menu ul > li {
+menu ul > li {
   margin-bottom: 10px;
   border-bottom: 1px solid black;
   padding: 10px;
 }
 
-#menu ul > li:hover {
+menu ul > li:hover {
   border: 1px solid black;
 }
 
-#menu a {
+menu a {
   text-decoration: none;
   color: var(--color-primary);
 }
 
 main {
+  background-color: #fff;
   text-align: justify;
   margin: auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 
 main h1 {
@@ -208,6 +210,13 @@ main h1 {
   margin-top: 10px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.135);
 }
+
+main p{
+  text-align: justify;
+  text-indent: 20px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
 p.substitute {
   font-size: 0.7em;
   text-align: center;
@@ -216,7 +225,6 @@ p.substitute {
 
 nav {
   background-color: var(--color-background);
-  margin: 5px 0;
   padding: 0 2px;
 }
 
@@ -230,23 +238,43 @@ nav a {
   color: var(--color-primary);
 }
 
-section#conteiner {
-  background-color: #fff;
-  margin: 0 5px;
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+#content{
+  padding-bottom: 10px;
 }
 
-main p {
-  text-indent: 20px;
-  font-size: 0.8em;
-  display: inline-block;
+h2{
+  text-align: center;
 }
 
-img.images {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
-  margin: 10px 0;
-  max-width: 290px;
-  display: inline-block;
+section#posts_conteiner{
+  background-image: url(../medias/images/back_Your_Math_tetiary.png);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+
+  
+}
+
+div.images_box{
+  display: flex;
+  justify-content: center;
+}
+
+article.posts{
+  background-color: var(--color-secundary);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.288);
+  height: 220px;
+  width: 220px;
+
+}
+
+footer{
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }

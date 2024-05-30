@@ -64,18 +64,19 @@ function showMenu() {
 
 function showHeaderBox(scrollPos) {
   const header_box_element = document.getElementById("conteiner-header");
+  const menu_icon_element = document.getElementById("menu_button")
   if (scrollPos > 199) {
     header_box_element.style.opacity = "1";
   } else {
     header_box_element.style.opacity = "0";
   }
 
-  if (scrollPos < 130) {
-    header_box_element.style.display = "none";
+  if (scrollPos < 190) {
+    menu_icon_element.display = "none";
     return;
   }
 
-  header_box_element.style.display = "flex";
+  menu_icon_element.display = "block";
 }
 
 let lastPos = 0;
