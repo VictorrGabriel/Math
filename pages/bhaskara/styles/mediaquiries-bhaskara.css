@@ -1,0 +1,13 @@
+@media screen and (min-width: 481px) and (max-width: 730px){
+    div.fixed_header> h1{
+        text-align: start;
+        padding-left: 15px;
+      }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1980px) {
+    div.fixed_header> h1{
+        text-align: start;
+        padding-left: 15px;
+      }
+}

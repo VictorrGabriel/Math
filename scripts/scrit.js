@@ -23,7 +23,7 @@ function waitingAnimationEnd(windowWidth) {
       if (windowWidth > 500) {
         resolve("none");
       } else {
-        resolve("block");
+        resolve("flex");
       }
     }, 400);
   });
@@ -48,7 +48,7 @@ function hideMenu() {
 function showMenu() {
   menu_element.classList.remove("slideMenuBack");
   menu_element.classList.add("slideMenuIn");
-  menu_element.style.display = "block";
+  menu_element.style.display = "flex";
 
   menuVisible = true;
 

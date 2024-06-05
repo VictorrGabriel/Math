@@ -3,37 +3,34 @@
 @media screen and (max-width: 320px) {
   menu {
     position: fixed;
-    top: 5px;
+    top: 1px;
     height: 100vh;
-    width: 90%;
+    /*  width: 95%; */
     z-index: 1;
   }
 
-  #close_menu{
+  #close_menu {
     display: block;
-    
   }
 
   img.images {
     min-width: 90px;
-  }           
+  }
 }
 
-@media screen and (min-width: 321px) and (max-width: 500px) {
-
+@media screen and (min-width: 321px) and (max-width: 480px) {
   menu {
     position: fixed;
-    top: 5px;
+    top: 1px;
     height: 100vh;
     margin-top: 5px;
     margin-right: 15px;
-    width: 90%;
+    /* width: 95%; */
     z-index: 1;
   }
 
-  #close_menu{
+  #close_menu {
     display: block;
-    
   }
 
   .images_conteiner {
@@ -42,7 +39,73 @@
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 1980px) {
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  #close_menu {
+    display: block;
+  }
+
+  menu {
+    position: fixed;
+    top: 1px;
+    height: 100vh;
+    margin-top: 5px;
+    margin-right: 15px;
+    /* width: 95%; */
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 730px) {
+  div.fixed_header > h1 {
+    text-align: start;
+    padding-left: 15px;
+  }
+
+  body {
+    display: grid;
+    grid-template-areas: "header header header" "menu main main" "footer footer footer";
+  }
+
+  div#header-text-area {
+    width: 100%;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  menu {
+    background-color: #fff;
+    grid-area: menu;
+    border: 1px solid black;
+    border-radius: 0 0px 3px 0;
+    padding: 10px;
+    margin-right: 5px;
+
+    display: none;
+    width: 150px;
+  }
+
+  menu > ul > li {
+    width: 90%;
+  }
+
+  menu a {
+    color: var(--color-primary);
+  }
+
+  main {
+    margin-top: 5px;
+    transition: position ease 1s;
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1980px) {
   body {
     display: grid;
     grid-template-areas: "header header header" "menu main main" "footer footer footer";
@@ -50,21 +113,51 @@
   header {
     grid-area: header;
   }
+
+  div.fixed_header > h1 {
+    text-align: start;
+    padding-left: 15px;
+  }
+
+  div#header-text-area {
+    width: 100%;
+  }
+
+  div#header-text-area > h1 {
+    font-size: 2.5em;
+  }
+
   menu {
+    background-color: #fff;
     grid-area: menu;
     border: 1px solid black;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0px 3px 0;
     padding: 10px;
     margin-right: 5px;
 
-    background-color: #fff;
     display: none;
     width: 150px;
   }
-  main{
+
+  menu > ul > li {
+    width: 90%;
+  }
+
+  menu a {
+    color: var(--color-primary);
+  }
+
+  main {
     margin-top: 5px;
     transition: position ease 1s;
+    grid-area: main;
   }
+ 
+
+  /* section#content{
+    max-width: 500px; ;
+  } */
+
   .shrink {
     max-width: calc(100% - 150px);
   }
@@ -72,7 +165,6 @@
     width: 100%;
     position: absolute;
     top: 300px;
-    
   }
 
   img.images {
@@ -84,7 +176,7 @@
     justify-content: center;
   }
 
-  footer{
+  footer {
     grid-area: footer;
   }
 }

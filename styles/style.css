@@ -88,7 +88,7 @@ div#image-header {
   width: 50%;
 }
 
-div#conteiner-header {
+div.fixed_header {
   background-color: #fff;
   height: 55px;
   color: var(--color-primary);
@@ -115,7 +115,7 @@ span.material-symbols-outlined {
   cursor: pointer;
 }
 
-div#conteiner-header h1 {
+div.fixed_header h1 {
   text-align: center;
   font-size: 1.6em;
   display: inline;
@@ -124,7 +124,7 @@ div#conteiner-header h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.135);
 }
 
-div#conteiner-header button {
+div.fixed_header button {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-weight: bold;
@@ -167,12 +167,17 @@ menu{
   border-radius: 0 3px 3px 0;
   padding: 10px;
 
-  background-color: var(--color-background);
+  background-color: var(--color-tertiary);
   display: none;
+  flex-direction: column;
 }
 
 #close_menu{
   display: none;
+  color: var(--color-secundary);
+  font-size: 1.2em;
+  align-self: flex-end;
+  margin: 10px;
 }
 
 menu ul {
@@ -181,24 +186,23 @@ menu ul {
 
 menu ul > li {
   margin-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-primary);
   padding: 10px;
 }
 
 menu ul > li:hover {
-  border: 1px solid black;
+  border: 2px solid var(--color-primary);
 }
 
 menu a {
   text-decoration: none;
-  color: var(--color-primary);
+  color: #fff;
 }
 
 main {
-  background-color: #fff;
   text-align: justify;
   margin: auto;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
+  
 }
 
 main h1 {
@@ -239,7 +243,11 @@ nav a {
 }
 
 #content {
-  padding-bottom: 10px;
+  background-color: #fff;
+  max-width: 600px;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.356);
 }
 
 h2 {
@@ -249,6 +257,7 @@ h2 {
 section#posts_conteiner {
   background-image: url(../medias/images/back_Your_Math_tetiary.png);
   background-attachment: fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
