@@ -32,9 +32,11 @@ function waitingAnimationEnd(windowWidth) {
 async function resultFunction() {
   const result = await waitingAnimationEnd(window.innerWidth);
   menu_element.style.display = result;
+  document.body.style.gridTemplateAreas = "'header header header' 'main main main' 'footer footer footer'"
 }
 
 function hideMenu() {
+  
   menu_element.classList.remove("slideMenuIn");
   menu_element.classList.add("slideMenuBack");
 
@@ -46,6 +48,7 @@ function hideMenu() {
 }
 
 function showMenu() {
+  document.body.style.gridTemplateAreas = "'header header header' 'menu main main' 'footer footer footer'"
   menu_element.classList.remove("slideMenuBack");
   menu_element.classList.add("slideMenuIn");
   menu_element.style.display = "flex";
@@ -60,14 +63,12 @@ function showHeaderBox(scrollPos) {
   if (scrollPos > 199) {
     header_box_element.style.opacity = "1";
     menu_button_element.style.display = "inline";
+    
   } else {
     header_box_element.style.opacity = "0";
     menu_button_element.style.display = "none";
-  }
-
-  /* if (scrollPos < 199) {
     
-  }  */
+  }
 }
 
 let lastPos = 0;

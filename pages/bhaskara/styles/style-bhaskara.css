@@ -2,5 +2,83 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #3b8dd9;
+  --color-secundary: #d93bbc;
+  --color-tertiary: #5ce1e6;
+  --color-background: #f5f5f5;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url(../media/background_bhaskara_header.png);
+  background-position: center top;
+  background-size: cover;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+}
+
+header h1 {
+  border: 2px solid var(--color-secundary);
+  padding: 5px;
+  align-self: center;
+  color: var(--color-primary);
+}
+
+div#wrapper-access {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110px;
+  padding: 0 5px;
+
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 
 
+}
+
+div#wrapper-access::before {
+  content: "";
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0) 50%,
+    var(--color-primary) 50%
+  );
+  width: 30px;
+  height: 30px;
+ 
+
+  position: absolute;
+  left: -30px;
+}
+
+div#wrapper-access a{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+
+div#wrapper-access button{
+    height: 20px;
+}
+
+/* header h1 > .carats{
+    color: white;
+}
+ */
